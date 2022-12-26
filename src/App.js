@@ -1,14 +1,14 @@
 
 // import { useState } from 'react';
 import './App.css';
-import getdata from './getdata';
+import usegetData from './usegetData';
 // import Card from './components/Card';
 // import Ui from './components/Ui';
 
 function App() {
   // const [button,setButton]=useState(false)
 
-  const custom = getdata();
+  const custom = usegetData('')
   return (
     <div>
       <div>{custom}</div>
