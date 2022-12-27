@@ -7,7 +7,7 @@ function usegetData() {
 
     useEffect(()=>{
         const result = async ()=>{
-            await fetch("https://api.chuknorris.io/jokes/categories").then(re=>re.json())
+            await fetch("https://api.chuknorris.io/jokes/categories").then(re=>re.json()).then(data=>setJoke(data.value))
         }
     
 
