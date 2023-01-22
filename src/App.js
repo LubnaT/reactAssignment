@@ -1,17 +1,19 @@
 
 
 import './App.css';
+import Productpage from './components/Productpage';
 // import Traffic from './Traffic';
-import usegetData from './usegetData';
+import UsegetData from './UsegetData';
 // import Card from './components/Card';
 // import Ui from './components/Ui';
 
 function App() {
   
-  const custom = usegetData('')
+  const custom = UsegetData('')
   return (
     <div>
-      <div>{custom}</div>
+      <Productpage/>
+      {/* <div>{custom}</div> */}
       {/* <Traffic/> */}
  
     </div>
